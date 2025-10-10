@@ -72,10 +72,11 @@ body, .contact-input, .contact-textarea  {
 Challenge: Identify all accessibility issues using all your newly aquired knowledge.
 
 Write them down here:
-- 
-- 
-- 
-- 
-- 
-- 
+- Text for the placeholders is inaccessible for some individuals. Text contrast issue.
+- No alt tag for the image. Screen reader can't identify it properly.
+- No labels for the input fields. Screen readers can not interpret.
+- The button on this website does not code to communicate with screen readers.
+- The html order/structure is not formatted correctly. Starts with h2 instead of h1.
+- A <div> in the code has an id of "main" but there is no main tag.
+- The font sizes are defined in pixels and not rem. Browswers are unable to scale properly.
 */
