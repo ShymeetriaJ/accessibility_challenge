@@ -14,22 +14,27 @@
             <!-- Form section -->
             <div class="contact-form-section">
                 <form>
-                    <h1 class="contact-form-heading">Reach <span>Out</span></h1>
-                    <div class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</div>
-                   
+                
+                    <h1 class="contact-form-heading" tabindex="1">Reach <span> Out </span></h1>
+                    <div class="contact-form-intro" tabindex="2">Curious about something? Complete these fields
+                    and "get in touch", as you humans say. 🤙</div>
                     <label for="name">Full name</label>
-                    <input class="contact-input" id="name" type="text" placeholder="Malik Trotter" />
-                   
+                    <input class="contact-input" tabindex="3" id="name" type="text" placeholder="Malik Trotter" aria-describedby="Please type your first 
+                    and last name."/>
+
                     <label for="Email">Email</label>
-                    <input class="contact-input" id="Email" type="text" placeholder="MTrotter@gmail.com" />
+                    <input class="contact-input" tabindex="4" id="Email" type="text" placeholder="MTrotter@gmail.com" aria-describedby="We will never 
+                    never share your email information with anyone." />
 
                     <label for="message">message</label>
-                    <textarea class="contact-textarea" id="message" rows="4" cols="50" placeholder="Your message..."></textarea>
+                    <textarea class="contact-textarea" tabindex="5" id="message" rows="4" cols="50" placeholder="Your message..." aria-describedby="Please
+                    tell us your areas of need and your preferred timeline for your project."></textarea>
 
-                    <button class="contact-submit-button" type="button" onclick="submitForm()">Send message 🎉</button>
+                    <button role="contact-submit-button" aria-label="Click to send message">Send message 🎉</button>
+                    <div role="alert" aria-live="polite">Form submitted successfully!</div>
                 </form>
-                <img class="rotate" src="connect.png" alt="A robot hand and a human hand reaching for each other."/>
+                <img class="rotate" src="connect.png" alt="true"/>
             </div>
-        </div>
+        </main>
     </body>
 </html>

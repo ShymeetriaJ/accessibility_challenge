@@ -65,12 +65,23 @@ body, .contact-input, .contact-textarea  {
 }
 
 .rotate {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     width: 900px;
-    position: relative; top: -40; right: -40px;
-    padding-right: 40px;
-    
-    
+    position: relative; top: -200; right: -210px;
+    padding-right: 40px;   
+}
+
+.contact-textarea:focus {
+    outline-color: limegreen;
+}
+.contact-input:focus {
+    outline-color: limegreen;
+}
+.contact-form-heading:focus {
+    outline-color: limegreen;
+}
+.contact-form-intro:focus {
+    outline-color: limegreen;
 }
 /* 
 Challenge: Identify all accessibility issues using all your newly aquired knowledge.
